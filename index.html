@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERT</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-blue-500 p-4">
+        <h1 class="text-white text-3xl font-bold">P.E.R.T Manager</h1>
+    </header>
+    <main class="flex justify-between p-4">
+        <aside class="w-3/12 mr-4">
+            <h2 class="text-lg font-semibold mb-4">Assigner une nouvelle tache</h2>
+            <form>
+                <section class="mb-4">
+                    <label for="tache" class="block">Nouvelle tache</label>
+                    <input id="tache" type="text" class="w-full border border-gray-300 rounded p-2">
+                </section>
+                <section class="mb-4">
+                    <label class="block">Assigner un employé</label>
+                    <select class="w-full border border-gray-300 rounded p-2">
+                        <option>Nom</option>
+                        <option>Nom</option>
+                        <option>Nom</option>
+                    </select>
+                </section>
+                <section class="mb-4">
+                    <header>
+                        <h3 class="text-lg font-semibold mb-2">Date d'assignation</h3>
+                    </header>
+                    <div class="mb-2">
+                        <label class="block">Jour de la semaine</label>
+                        <select class="w-full border border-gray-300 rounded p-2">
+                            <option>Lundi</option>
+                            <option>Mardi</option>
+                        </select>
+                    </div>
+                    <div class="mb-2">
+                        <label for="debut" class="block">Début</label>
+                        <input id="debut" type="time" class="border border-gray-300 rounded p-2">
+                        <label for="fin" class="block">Fin</label>
+                        <input id="fin" type="time" class="border border-gray-300 rounded p-2">
+                    </div>
+                </section>
+                <section class="mb-4">
+                    <header>
+                        <h3 class="text-lg font-semibold mb-2">Estimation</h3>
+                    </header>
+                    <label for="estimation" class="block">Heure</label>
+                    <input id="estimation" type="time" class="border border-gray-300 rounded p-2">
+                </section>
+                <input type="submit" value="Assigner" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+            </form>
+        </aside>
+        <article class="w-9/12 flex">
+            <section class="flex-1">
+                <header>
+                    <h2 class="text-lg font-semibold mb-4">Lundi</h2>
+                </header>
+                <article>
+                    <section class="bg-blue-400 text-white p-4 rounded shadow mb-2">
+                        <h3 class="text-lg font-semibold">Tache</h3>
+                        <p>Performateur</p>
+                        <p>Heure début - Heure fin</p>
+                        <form>
+                            <h4 class="text-sm font-semibold mt-4">Tache finie</h4>
+                            <p>&agrave; 12 heure</p>
+                            <br>
+                            <strong>
+                                Pourcentage de r&eacute;alistation:
+                            </strong>
+                            <p>
+                                20%
+                            </p>
+                        </form>
+                    </section>
+                    <section class="bg-white p-4 rounded shadow mb-2">
+                        <h3 class="text-lg font-semibold">Tache</h3>
+                        <p>Performateur</p>
+                        <p>Heure début - Heure fin</p>
+                        <form>
+                            <h4 class="text-sm font-semibold mt-4">Tache finie</h4>
+                            <label for="realisation" class="block">Realisation</label>
+                            <input type="time" name="realisation" id="realisation" class="border border-gray-300 rounded p-2">
+                            <input type="submit" value="Finit" class="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded mt-2">
+                        </form>
+                    </section>
+                </article>
+            </section>
+            <section class="flex-1">
+                <header>
+                    <h2 class="text-lg font-semibold mb-4">Mardi</h2>
+                </header>
+            </section>
+            <section class="flex-1">
+                <header>
+                    <h2 class="text-lg font-semibold mb-4">Mercredi</h2>
+                </header>
+            </section>
+            <section class="flex-1">
+                <header>
+                    <h2 class="text-lg font-semibold mb-4">Jeudi</h2>
+                </header>
+            </section>
+            <section class="flex-1">
+                <header>
+                    <h2 class="text-lg font-semibold mb-4">Vendredi</h2>
+                </header>
+            </section>
+        </article>        
+    </main>
+</body>
+
+</html>
